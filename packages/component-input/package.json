@@ -21,7 +21,7 @@
 		"url": "git+https://github.com/postbird/blog-practice-codes.git"
 	},
 	"scripts": {
-		"test": "echo \"Error: run tests from root\" && exit 1"
+		"test": "node __tests__/index.test.js"
 	},
 	"bugs": {
 		"url": "https://github.com/postbird/blog-practice-codes/issues"
