@@ -1,34 +1,37 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
+	mode: 'development',
 	entry: {
 		main: path.resolve(__dirname, 'src/index.js'),
 	},
 	output: {
-		path: path.resolve(__dirname, 'src/'),
-		filename: '[name].[hash].bundle.[ext]',
+		filename: '[name].[hash:5].js',
+		path: path.resolve(__dirname, 'dist'),
 	},
+	devtool: 'source-map',
 	resolve: {
-		extensions: ['js', 'jsx', 'json'],
+		extensions: ['.js', '.jsx'],
 	},
 	module: {
 		rules: [
 			{
 				test: /\.(js|jsx)$/,
-				exclude: path.resolve(__dirname, 'node_modules/'),
+				exclude: [path.resolve(__dirname, 'node_modules/')],
 				use: {
 					loader: 'babel-loader',
 				},
 			},
 		],
 	},
-	devServer: {
-		port: 3000,
-	},
 	plugins: [
-		new HtmlWebpackPlugin({
+		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, 'src/index.html'),
 		}),
 	],
+	devServer: {
+		hot: false,
+		port: 3000,
+	},
 };

@@ -2,19 +2,21 @@
 	"name": "plui-builder",
 	"version": "0.0.1",
 	"private": true,
+	"workspaces": [
+		"packages/*"
+	],
 	"scripts": {
-		"start": "webpack-dev-server --config webpack.config.js"
+		"start": "webpack-dev-server --config ./webpack.config.js"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/cli": "^7.12.8",
 		"@babel/core": "^7.12.9",
 		"@babel/preset-env": "^7.12.7",
 		"babel-loader": "^8.2.2",
 		"html-webpack-plugin": "^4.5.0",
 		"lerna": "^3.22.1",
-		"webpack": "^4.44.1",
-		"webpack-cli": "^3.3.12",
+		"webpack": "^5.9.0",
+		"webpack-cli": "^3.x.x",
 		"webpack-dev-server": "^3.11.0"
 	},
 	"license": "MIT"
