@@ -3,32 +3,37 @@
 	"version": "0.0.1",
 	"description": "> TODO: description",
 	"author": "ptbird <ptbird@yeah.net>",
-	"homepage": "https://github.com/postbird/blog-practice-codes#readme",
+	"homepage": "https://github.com/postbird/lerna-app-project#readme",
 	"license": "ISC",
-	"main": "lib/index.js",
+	"main": "dist/index.js",
 	"directories": {
-		"lib": "lib",
+		"lib": "dist",
 		"test": "__tests__"
 	},
 	"files": [
-		"lib"
+		"dist"
 	],
 	"publishConfig": {
-		"registry": "https://registry.npm.taobao.org"
+		"registry": "https://registry.npmjs.org/"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/postbird/blog-practice-codes.git"
+		"url": "git+https://github.com/postbird/lerna-app-project.git"
 	},
 	"scripts": {
-		"test": "node __tests__/index.test.js"
+		"test": "node __tests__/index.test.js",
+		"build": "babel src --out-dir dist",
+		"publish": "yarn build && npm publish"
 	},
 	"bugs": {
-		"url": "https://github.com/postbird/blog-practice-codes/issues"
+		"url": "https://github.com/postbird/lerna-app-project/issues"
 	},
 	"devDependencies": {
 		"@babel/cli": "^7.12.8",
 		"@babel/core": "^7.12.9",
 		"@babel/preset-env": "^7.12.7"
+	},
+	"peerDependencies": {
+		"react": "*"
 	}
 }

@@ -6,7 +6,10 @@
 		"packages/*"
 	],
 	"scripts": {
-		"start": "webpack-dev-server --config ./webpack.config.js"
+		"start": "webpack-dev-server --config ./webpack.config.js",
+		"build": "lerna run build",
+		"prepublish": "yarn build",
+		"publish": "yarn build"
 	},
 	"dependencies": {},
 	"devDependencies": {

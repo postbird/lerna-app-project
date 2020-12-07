@@ -2,6 +2,5 @@
 
 module.exports = componentButton;
 
-function componentButton() {
-    // TODO
+function componentButton() {// TODO
 }
