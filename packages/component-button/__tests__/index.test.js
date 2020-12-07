@@ -2,6 +2,6 @@
 
 const componentButton = require('../lib');
 
-describe('@plui/component-button', () => {
+describe('@ptlui/component-button', () => {
     it('needs tests');
 });
