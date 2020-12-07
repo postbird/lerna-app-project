@@ -1,6 +1,6 @@
 {
-	"name": "@plui/component-button",
-	"version": "0.0.1",
+	"name": "@ptlui/component-button",
+	"version": "0.0.4",
 	"description": "> TODO: description",
 	"author": "ptbird <ptbird@yeah.net>",
 	"homepage": "https://github.com/postbird/lerna-app-project#readme",
@@ -23,7 +23,7 @@
 	"scripts": {
 		"test": "node __tests__/index.test.js",
 		"build": "babel src --out-dir dist",
-		"publish": "yarn build && npm publish"
+		"publish": "npm publish"
 	},
 	"bugs": {
 		"url": "https://github.com/postbird/lerna-app-project/issues"

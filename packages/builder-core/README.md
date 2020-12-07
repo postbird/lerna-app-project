@@ -1,11 +1,11 @@
-# `@plui/builder-core`
+# `@ptlui/builder-core`
 
 > TODO: description
 
 ## Usage
 
 ```
-import builderCore from '@plui/builder-core';
+import builderCore from '@ptlui/builder-core';
 
 // TODO: DEMONSTRATE API
 ```

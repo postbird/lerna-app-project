@@ -1,5 +1,5 @@
 import builderCore from '../src/index';
 
-describe('@plui/builder-core', () => {
+describe('@ptlui/builder-core', () => {
     it('needs tests');
 });
