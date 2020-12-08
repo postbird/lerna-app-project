@@ -24,7 +24,6 @@
 	"scripts": {
 		"test": "node __tests__/index.test.js",
 		"build": "babel src --out-dir dist",
-		"publish": "npm publish"
 	},
 	"bugs": {
 		"url": "https://github.com/postbird/lerna-app-project/issues"
