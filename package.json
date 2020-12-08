@@ -10,7 +10,9 @@
 		"build": "lerna run build",
 		"prepublish": "yarn run build",
 		"publish": "lerna run build && lerna run publish",
-		"version": "lerna exec -- npm verison patch"
+		"version:patch": "lerna exec -- npm verison patch",
+		"version:major": "lerna exec -- npm verison major",
+		"version:minor": "lerna exec -- npm verison minor"
 	},
 	"dependencies": {},
 	"devDependencies": {
