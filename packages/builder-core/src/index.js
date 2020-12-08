@@ -1,4 +1,4 @@
 export default function builderCore() {
     // TODO
-    console.log('--')
+    console.log('-s-')
 }
