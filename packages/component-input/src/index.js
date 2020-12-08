@@ -5,6 +5,7 @@ const builder = require('@ptlui/builder-core');
 module.exports = componentButton;
 
 function componentButton() {
-    // TODO
-    builder();
+	// TODO
+	builder();
+	console.log('1');
 }
