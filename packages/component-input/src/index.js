@@ -7,5 +7,5 @@ module.exports = componentButton;
 function componentButton() {
 	// TODO
 	builder();
-	console.log('1');
+	console.log('12');
 }
