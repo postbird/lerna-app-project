@@ -1,11 +1,11 @@
-# `@plui/component-button`
+# `@ptlui/component-button`
 
 > TODO: description
 
 ## Usage
 
 ```
-const componentButton = require('@plui/component-button');
+const componentButton = require('@ptlui/component-button');
 
 // TODO: DEMONSTRATE API
 ```

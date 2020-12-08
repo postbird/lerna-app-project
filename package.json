@@ -8,8 +8,10 @@
 	"scripts": {
 		"start": "webpack-dev-server --config ./webpack.config.js",
 		"build": "lerna run build",
-		"prepublish": "yarn build",
-		"publish": "yarn build"
+		"publish": "lerna publish",
+		"v:patch": "lerna version patch",
+		"v:major": "lerna version major",
+		"v:minor": "lerna version minor"
 	},
 	"dependencies": {},
 	"devDependencies": {

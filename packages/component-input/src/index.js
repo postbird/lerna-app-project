@@ -1,10 +1,11 @@
 'use strict';
 
-const builder = require('@plui/builder-core');
+const builder = require('@ptlui/builder-core');
 
 module.exports = componentButton;
 
 function componentButton() {
-    // TODO
-    builder();
+	// TODO
+	builder();
+	console.log('12');
 }

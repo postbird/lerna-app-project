@@ -1,11 +1,11 @@
 {
-	"name": "@plui/builder-core",
-	"version": "0.0.1",
+	"name": "@ptlui/builder-core",
+	"version": "0.0.10",
 	"description": "> TODO: description",
 	"author": "ptbird <ptbird@yeah.net>",
 	"homepage": "https://github.com/postbird/lerna-app-project#readme",
 	"license": "ISC",
-	"main": "dist/index.es.js",
+	"main": "dist/index.js",
 	"module": "dist/idnex.es.module.js",
 	"directories": {
 		"lib": "dist",
@@ -23,8 +23,7 @@
 	},
 	"scripts": {
 		"test": "node __tests__/index.test.js",
-		"build": "babel src --out-dir dist",
-		"publish": "yarn build && npm publish"
+		"build": "babel src --out-dir dist"
 	},
 	"bugs": {
 		"url": "https://github.com/postbird/lerna-app-project/issues"
@@ -32,6 +31,8 @@
 	"devDependencies": {
 		"@babel/cli": "^7.12.8",
 		"@babel/core": "^7.12.9",
+		"@babel/plugin-transform-modules-umd": "^7.12.1",
 		"@babel/preset-env": "^7.12.7"
-	}
+	},
+	"gitHead": "6cd4eadb2b9dabed3a1a505bccb80a41d597e8a0"
 }
